@@ -1,0 +1,37 @@
+/* General styling for the NotFound container */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+  background-color: #e9ecef; /* Light gray background for contrast */
+  text-align: center; /* Center align text */
+}
+
+/* Image styling */
+.not-found-img {
+  max-width: 80%; /* Limit image width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+/* Title styling */
+.not-found-title {
+  font-size: 24px; /* Large text for visibility */
+  color: #007bff; /* Bright blue text color for emphasis */
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .not-found-title {
+    font-size: 20px; /* Smaller text on mobile */
+    color: #0056b3; /* Darker blue for better readability on small screens */
+  }
+
+  .not-found-img {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}

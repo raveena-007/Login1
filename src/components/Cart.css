@@ -1,0 +1,36 @@
+/* Container for the cart content */
+.cart-container {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  padding: 20px;
+  min-height: 50vh; /* Ensure some vertical spacing */
+}
+
+/* Responsive image */
+.cart-img {
+  max-width: 100%; /* Ensures the image never exceeds its container's width */
+  height: auto; /* Keeps the image's aspect ratio intact */
+  object-fit: contain; /* Makes sure the image scales properly inside its container */
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 15px;
+  }
+  
+  .cart-img {
+    max-width: 80%; /* Adjusts image size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 10px;
+  }
+  
+  .cart-img {
+    max-width: 70%; /* Further adjusts image size on very small screens */
+  }
+}
