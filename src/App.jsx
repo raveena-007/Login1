@@ -6,7 +6,7 @@ import Cart from "./components/Cart";
 import NotFound from "./components/NotFound";
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/Login1">
     <Routes>
       <Route path="/login" element={<LoginForm />} />
       <Route path="/" element={<Home />} />
