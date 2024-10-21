@@ -8,8 +8,8 @@ import NotFound from "./components/NotFound";
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<LoginForm />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/login" element={<LoginForm />} />
+      <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="*" element={<NotFound />} />
